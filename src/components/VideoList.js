@@ -8,7 +8,7 @@ const VideoList = ({ videos }) => {
 	// TODO: Map over the video list and render one
 	//  <VideoItem /> for each video
 	const renderedList = videos.map((video) => {
-		return <VideoItem />;
+		return <VideoItem video={video}/>;
 	})
 	return (
 		<div>{renderedList}</div>

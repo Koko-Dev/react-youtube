@@ -19,7 +19,7 @@ class App extends React.Component {
 			}
 		});
 
-		await this.setState({ videos: response.data.items });
+		this.setState({ videos: response.data.items });
 
 	}
 

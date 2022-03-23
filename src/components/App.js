@@ -3,6 +3,8 @@ import SearchBar from './SearchBar';
 import youtube from '../apis/youtube';
 
 class App extends React.Component {
+	state = { videos: [] }
+
 	onTermSubmit = async (term) => {
 		// TODO: Fetch a list of videos according to term
 		// TODO: Take the videos received and
@@ -16,6 +18,8 @@ class App extends React.Component {
 				q: term
 			}
 		})
+
+		console.log(response.data.items);
 	}
 
 	render() {

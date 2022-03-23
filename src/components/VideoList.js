@@ -1,4 +1,5 @@
 import React from 'react';
+import VideoItem from './VideoItem';
 
 const VideoList = ({ videos }) => {
 	// NOTE: props.video = array of different records

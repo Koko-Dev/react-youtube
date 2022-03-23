@@ -3,9 +3,15 @@ import VideoItem from './VideoItem';
 
 const VideoList = ({ videos }) => {
 	// NOTE: props.video = array of different records
-	//  of videos that we will render out as HTML onto the screen
+	//  of videos that we will render out as HTML onto
+	//  the screen
+	// TODO: Map over the video list and render one
+	//  <VideoItem /> for each video
+	const renderedList = videos.map((video) => {
+		return <VideoItem />;
+	})
 	return (
-		<div>{videos.length}</div>
+		<div>{renderedList}</div>
 	)
 }
 

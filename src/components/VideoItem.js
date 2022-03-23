@@ -1,3 +1,4 @@
+import './VideoItem.css';
 import React from 'react';
 
 const VideoItem = ({ video }) => {
@@ -8,6 +9,8 @@ const VideoItem = ({ video }) => {
 			<div className="content">
 				<div className="header">{video.snippet.title}</div>
 				{/* /.header */}
+				<div className="description">{video.snippet.description}</div>
+				{/* /.description */}
 			</div>
 			{/* /.content */}
 		</div>

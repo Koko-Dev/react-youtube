@@ -11,7 +11,7 @@ class App extends React.Component {
 		//  rerender/update itself, which is then going
 		//  to allow us to render those newly fetched
 		//  videos out as a list onto the screen.
-		await youtube.get('/search', {
+		const response = await youtube.get('/search', {
 			params: {
 				q: term
 			}

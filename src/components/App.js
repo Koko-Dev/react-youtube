@@ -2,6 +2,9 @@ import React from 'react';
 import SearchBar from './SearchBar';
 
 class App extends React.Component {
+	onTermSubmit = (term) => {
+		console.log('term from onTermSubmit in App.js: ', term);
+	}
 
 	render() {
 		return (

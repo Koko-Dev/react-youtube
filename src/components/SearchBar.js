@@ -10,13 +10,10 @@ class SearchBar extends React.Component {
 	}
 onFormSubmit = (event) => {
 		event.preventDefault();
-		console.log('Form has been submitted');
+		this.props.onFormSubmit(this.state.term);
 
-	// TODO: Make sure we call callback from parent
-	//  component so that it tells the App that the
-	//  user just submitted the form and that they
-	//  probably want to attempt to initiate another
-	//  search of the youTube API
+
+
 	}
 
 	render() {

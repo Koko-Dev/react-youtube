@@ -5,7 +5,11 @@ const VideoItem = ({ video }) => {
 		<div className="item">
 			<img src={video.snippet.thumbnails.medium.url}
 			     className="ui image"/>
-			{video.snippet.title}
+			<div className="content">
+				<div className="header">{video.snippet.title}</div>
+				{/* /.header */}
+			</div>
+			{/* /.content */}
 		</div>
 	)
 }

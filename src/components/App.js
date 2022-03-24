@@ -25,7 +25,7 @@ class App extends React.Component {
 
 	// note: argument video is the video we collect from youtube api
 	onVideoSelect = (video) => {
-		console.log('From the App!', video);
+		this.setState({selectedVideo: video});
 	}
 
 	render() {

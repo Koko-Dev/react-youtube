@@ -21,7 +21,11 @@ class App extends React.Component {
 		});
 
 		this.setState({ videos: response.data.items });
+	}
 
+	// note: argument video is the video we collect from youtube api
+	onVideoSelect = (video) => {
+		console.log('From the App!', video);
 	}
 
 	render() {

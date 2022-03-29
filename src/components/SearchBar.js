@@ -20,7 +20,7 @@ class SearchBar extends React.Component {
 			     and awaits response to youtube /search endpoint with
 			      params { q: term }
 		   -- important: When onSubmit event is triggered, form has been submitted */
-		this.props.onFormSubmit(this.state.term);
+		this.props.callMeWhenSubmitted(this.state.term);
 	}
 
 	render() {

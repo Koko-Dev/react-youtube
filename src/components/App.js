@@ -32,7 +32,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="ui container">
-				<SearchBar callMeWhenSubmitted={this.onTermSubmit}/>
+				<SearchBar onTermSubmit={this.onTermSubmit}/>
 				<VideoDetail video={this.state.selectedVideo} />
 				<VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
 			</div>

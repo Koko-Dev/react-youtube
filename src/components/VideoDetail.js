@@ -10,7 +10,7 @@ const VideoDetail = ({ video }) => {
 		<div>
 			<div className="ui embed">
 				<iframe src={videoSrc}
-				        frameborder="0"></iframe>
+				        title="video player"></iframe>
 
 			</div>
 			{/* /.ui embed */}

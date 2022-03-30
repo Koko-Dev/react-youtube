@@ -21,7 +21,10 @@ class App extends React.Component {
 			}
 		});
 
-		this.setState({ videos: response.data.items });
+		this.setState({
+			videos: response.data.items,
+			selectedVideo: response.data.items[0]
+		});
 	}
 
 	// note: argument video is the video we collect from youtube api

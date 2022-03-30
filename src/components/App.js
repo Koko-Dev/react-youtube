@@ -7,6 +7,17 @@ import VideoDetail from "./VideoDetail";
 class App extends React.Component {
 	state = { videos: [], selectedVideo: null };
 
+	/*TODO: Create a default search for when the user
+	    first opens the app by running a search when
+	    the app first renders.
+		NOTE: To do this we manually call on onTermSubmit
+				because that is the function that is currently
+				handling doing a search and updating the state
+				of our component*/
+	componentDidMount() {
+		this.onTermSubmit('carrots');
+	}
+
 	onTermSubmit = async (term) => {
 		// TODO: Fetch a list of videos according to term
 		// TODO: Take the videos received and
